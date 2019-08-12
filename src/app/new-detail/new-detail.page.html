@@ -1,0 +1,20 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1 class="text-format--header">
+      {{ 'GLOBAL.NEWS' | translate }}
+    </h1>
+
+    <app-card-new
+      [title]="new.title"
+      [description]="new.description"
+      [city]="new.city"
+      [cover]="new.cover"
+      [bgColorTag]="new.bgColorTag"
+    >
+    </app-card-new>
+  </div>
+</ion-content>

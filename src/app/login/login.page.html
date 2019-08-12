@@ -1,0 +1,106 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1 class="text-format--header">
+      {{ 'GLOBAL.LOGIN' | translate }}
+    </h1>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">{{
+            'GLOBAL.EMAIL' | translate
+          }}</ion-label>
+          <ion-input
+            formControlName="email"
+            type="email"
+            required="true"
+            clearInput
+          >
+          </ion-input>
+        </ion-item>
+
+        <ng-container *ngIf="email.touched && email.invalid">
+          <ion-text
+            *ngIf="email.errors.required"
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.REQUIRED' | translate: { value: emailWord } }}
+          </ion-text>
+
+          <ion-text 
+            *ngIf="email.errors.email" 
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.INVALID_EMAIL' | translate }}
+          </ion-text>
+        </ng-container>
+
+        <ion-item>
+          <ion-label position="floating">{{
+            'GLOBAL.PASSWORD' | translate
+          }}</ion-label>
+          <ion-input
+            formControlName="password"
+            type="password"
+            required="true"
+            clearInput
+          >
+          </ion-input>
+        </ion-item>
+
+        <ng-container *ngIf="password.touched && password.invalid">
+          <ion-text
+            *ngIf="password.errors.required"
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.REQUIRED' | translate: { value: passwordWord } }}
+          </ion-text>
+        </ng-container>
+      
+        <ion-item>
+          <ion-label>{{ 'GLOBAL.LANGUAGE' | translate }}</ion-label>
+          <ion-select
+            cancelText="{{ 'GLOBAL.CANCEL' | translate }}"
+            okText="{{ 'GLOBAL.OK' | translate }}"
+          >
+            <ion-select-option
+              *ngFor="let lang of languages$ | async"
+              [value]="lang"
+            >
+              {{ 'LANGUAGES.' + lang.toUpperCase() | translate }}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-button
+        color="primary"
+        expand="block"
+        mode="ios"
+        type="submit"
+        [disabled]="loginForm.invalid || isLoading"
+        class="login-button"
+      >
+        {{ buttonWord }}
+      </ion-button>
+    </form>
+    
+    <ion-button
+      [routerLink]="['/forgot']"
+      color="dark"
+      expand="block"
+      mode="ios"
+      fill="clear"
+      class="ion-margin-vertical"
+    >
+      {{ 'LOGIN_PAGE.FORGOT' | translate }}
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,164 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1 class="text-format--header">
+      {{ 'PROFILE_PAGE.TITLE' | translate }}
+    </h1>
+
+    <form [formGroup]="profileForm" (ngSubmit)="createProfile()">
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">{{
+            'GLOBAL.FULLNAME' | translate
+          }}</ion-label>
+          <ion-input
+            formControlName="fullName"
+            type="text"
+            required="true"
+            clearInput
+          >
+          </ion-input>
+        </ion-item>
+
+        <ng-container *ngIf="fullName.touched && fullName.invalid">
+          <ion-text
+            *ngIf="fullName.errors.required"
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.REQUIRED' | translate: { value: fullNameWord } }}
+          </ion-text>
+        </ng-container>
+
+        <ion-item>
+          <ion-label position="floating">{{
+            'PROFILE_PAGE.JOB' | translate
+          }}</ion-label>
+          <ion-input
+            formControlName="job"
+            type="text"
+            required="true"
+            clearInput
+          >
+          </ion-input>
+        </ion-item>
+
+        <ng-container *ngIf="job.touched && job.invalid">
+          <ion-text
+            *ngIf="job.errors.required"
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.REQUIRED' | translate: { value: jobWord } }}
+          </ion-text>
+        </ng-container>
+
+        <ion-item>
+          <ion-label position="floating">{{
+            'GLOBAL.EMAIL' | translate
+          }}</ion-label>
+          <ion-input
+            formControlName="email"
+            type="email"
+            required="true"
+            clearInput
+          >
+          </ion-input>
+        </ion-item>
+
+        <ng-container *ngIf="email.touched && email.invalid">
+          <ion-text
+            *ngIf="email.errors.required"
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.REQUIRED' | translate: { value: emailWord } }}
+          </ion-text>
+
+          <ion-text 
+            *ngIf="email.errors.email" 
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.INVALID_EMAIL' | translate }}
+          </ion-text>
+        </ng-container>
+      </ion-list>
+
+      <ion-item>
+        <ion-label>{{ 'GLOBAL.LANGUAGE' | translate }}</ion-label>
+        <ion-select
+          cancelText="{{ 'GLOBAL.CANCEL' | translate }}"
+          okText="{{ 'GLOBAL.OK' | translate }}"
+        >
+          <ion-select-option
+            *ngFor="let lang of languages$ | async"
+            [value]="lang"
+          >
+            {{ 'LANGUAGES.' + lang.toUpperCase() | translate }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button
+        (click)="inputFile.click()"
+        color="primary"
+        expand="block"
+        mode="ios"
+        fill="outline"
+        type="button"
+        class="ion-margin-bottom ion-margin-top"
+      >
+        {{ 'PROFILE_PAGE.PHOTO' | translate }}
+      </ion-button>
+
+      <ng-container *ngIf="errorsImgWord.length > 0">
+        <div
+          *ngFor="let error of errorsImgWord"
+          class="text-format--info ion-padding-bottom ion-padding-start"
+        >
+          <ion-text color="danger">
+            {{ error }}
+          </ion-text>
+        </div>
+      </ng-container>
+
+      <input
+        #inputFile
+        type="file"
+        name="file"
+        accept="image/png,image/jpeg,image/jpg"
+        (change)="fileChangeEvent($event)"
+        style="display: none;"
+      />
+
+      <div class="image-preview">
+        <image-cropper
+          [imageChangedEvent]="imageChangedEvent"
+          [resizeToWidth]="250"
+          [cropperMinWidth]="250"
+          [cropperMinHeight]="250"
+          format="png,jpeg,jpg"
+        ></image-cropper>
+        <ion-icon
+          *ngIf="!imageChangedEvent"
+          name="image"
+          class="image-preview__icon"
+        ></ion-icon>
+      </div>
+
+      <ion-button
+        color="primary"
+        expand="block"
+        mode="ios"
+        type="submit"
+        [disabled]="profileForm.invalid || isLoading"
+      >
+        {{ buttonWord }}
+      </ion-button>
+    </form>
+  </div>
+</ion-content>

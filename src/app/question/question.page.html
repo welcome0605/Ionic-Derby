@@ -1,0 +1,71 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div
+    style="background-image: url('/assets/images/question-bg.png');"
+    class="wrapper fullscreen"
+  >
+    <ion-text color="light">
+      <h1 class="text-format--header text-format--shadow ion-text-center">
+        ¿Qué hotel tiene la exposición más amplia de Arte Precolombino?
+      </h1>
+    </ion-text>
+
+    <ion-grid class="response-options ion-no-padding">
+      <ion-row>
+        <ion-col>
+          <ion-button
+              color="light"
+              expand="block"
+              mode="ios"
+            >
+              Claris
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button
+              color="light"
+              expand="block"
+              mode="ios"
+            >
+              Urban
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button
+              color="light"
+              expand="block"
+              mode="ios"
+            >
+              Balmes
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button
+              color="light"
+              expand="block"
+              mode="ios"
+            >
+              Arai
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-button
+      color="primary"
+      expand="block"
+      mode="ios"
+      class="btn-ranking"
+    >
+      {{ 'GLOBAL.RANKING' | translate }}
+    </ion-button>
+  </div>
+</ion-content>

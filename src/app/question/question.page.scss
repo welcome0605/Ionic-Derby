@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullscreen {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+.response-options {
+  display: flex;
+  align-items: start;
+  margin-top: 32px;
+}
+
+.btn-ranking {
+  margin-bottom: 32px;
+}

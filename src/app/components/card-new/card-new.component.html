@@ -1,0 +1,20 @@
+<div class="derby-card-new">
+  <div 
+    class="
+      derby-card-new__tag ion-text-uppercase ion-text-center 
+      text-format--sub-header text-format--light
+    "
+    [ngClass]="type === 'mini' ? 'derby-card-new__tag--mini' : ''"
+    [style.background-color]="bgColorTag"
+  >
+    {{ city }}
+  </div>
+  <ion-img src="{{ cover }}"></ion-img>
+  <div 
+    class="text-format--sub-header ion-padding-vertical"
+    [ngClass]="type === 'mini' ? 'derby-card-new__title--mini' : ''"
+  >
+    {{ title }}
+  </div>
+  <div class="text-format--basic ion-text-justify ion-padding-vertical">{{ description }}</div>
+</div>

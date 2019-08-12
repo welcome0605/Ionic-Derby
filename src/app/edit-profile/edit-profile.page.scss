@@ -1,0 +1,22 @@
+.image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 16px auto;
+  position: relative;
+
+  &__icon {
+    color: #bdbdbd;
+    font-size: 80px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__item {
+    max-width: 100%;
+    height: auto;
+  }
+}

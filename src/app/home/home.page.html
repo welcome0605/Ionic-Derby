@@ -1,0 +1,71 @@
+<ion-content color="secondary">
+  <div class="wrapper">
+    <ion-grid no-padding>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size-xs="12" size-md="9">
+          <ion-img src="/assets/images/toolbar-logo.png" class="logo">
+          </ion-img>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size-xs="12" size-md="9">
+          <ion-img src="/assets/images/home.png"></ion-img>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size-xs="12" size-md="9">
+          <ion-list class="home-list">
+            <ion-item
+              [routerLink]="['/hotels']"
+              class="ion-text-center ion-no-padding home-list__link"
+            >
+              <ion-label>{{ 'HOME_PAGE.LINK_1' | translate }}</ion-label>
+            </ion-item>
+            <ion-item
+              [routerLink]="['/history-art']"
+              class="ion-text-center ion-no-padding home-list__link"
+            >
+              <ion-label>{{ 'HOME_PAGE.LINK_2' | translate }}</ion-label>
+            </ion-item>
+            <ion-item
+              [routerLink]="['/museums']"
+              class="ion-text-center ion-no-padding home-list__link"
+            >
+              <ion-label>{{ 'HOME_PAGE.LINK_3' | translate }}</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size-xs="12" size-md="9">
+          <ion-button
+            [routerLink]="['/edit-profile']"
+            color="primary"
+            expand="block"
+            mode="ios"
+            fill="outline"
+          >
+            {{ 'GLOBAL.SIGN_IN' | translate }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size-xs="12" size-md="9">
+          <ion-button
+            [routerLink]="['/login']"
+            color="primary"
+            expand="block"
+            mode="ios"
+            fill="outline"
+          >
+            {{ 'GLOBAL.LOGIN' | translate }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

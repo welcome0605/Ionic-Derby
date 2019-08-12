@@ -1,0 +1,7 @@
+{
+  "name": "derbyAndu",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

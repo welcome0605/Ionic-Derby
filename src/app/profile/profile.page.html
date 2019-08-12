@@ -1,0 +1,71 @@
+<ion-header>
+    <app-main-toolbar></app-main-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="wrapper">
+      <h1 class="text-format--header ion-text-center">Ana Fernández</h1>
+      <h4 class="text-format--basic ion-text-center ion-no-margin">{{ 'GLOBAL.COMMERCIAL' | translate }}</h4>
+      <ion-text color="primary">
+        <h2 class="ion-text-center text-format--header ion-no-margin">{{ totalPoints }} {{ 'GLOBAL.POINTS' | translate }}</h2>
+      </ion-text>
+      
+      <ul 
+        class='circle-container bg-responsive'
+        style="background-image: url('/assets/images/profile.jpg');"
+      >
+        <li 
+          *ngFor="let award of awards" 
+          class="circle-container__item"
+        >
+          <ion-img
+            class="circle-container__image"
+            [class]="award.disabled ? 'circle-container__image--disabled' : ''"
+            [src]="award.icon"
+          ></ion-img>
+        </li>
+      </ul>
+  
+      <ion-grid size-md>
+        <ion-row>
+          <ion-col>
+              <ion-button
+                color="primary"
+                expand="block"
+                mode="ios"
+              >
+              {{ 'EDIT_PROFILE_PAGE.EDIT' | translate }}
+              </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button
+              color="primary"
+              expand="block"
+              mode="ios"
+            >
+              {{ 'GLOBAL.LOGOUT' | translate }}
+          </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-list *ngIf="awards.length > 0">
+        <ion-list-header>
+          {{ 'EDIT_PROFILE_PAGE.AWARD' | translate }}
+        </ion-list-header>
+        
+        <ng-container *ngFor="let award of awards">
+          <ion-item *ngIf="!award.disabled">
+            <ion-avatar slot="start">
+              <img [src]="award.icon">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{ award.name }}</h2>
+              <p>{{ award.description }}</p>
+            </ion-label>
+          </ion-item>
+        </ng-container>
+      </ion-list>
+    </div>
+  </ion-content>
+  

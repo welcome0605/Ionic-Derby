@@ -1,0 +1,27 @@
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 44vh;
+  position: relative;
+
+  > .effect {
+    height: 80px; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+  }
+}
+
+.text-format--baloo-header {
+  font-size: 40px;
+  position: relative;
+  top: 40px;
+  margin: 0 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, .6);
+}
+
+.text-format--header {
+  color: rgba(0, 0, 0, .6);
+}

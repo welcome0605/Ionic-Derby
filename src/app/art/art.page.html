@@ -1,0 +1,27 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div 
+    [style.background-image]="dynamicStyles.backgroundImage"
+    class="bg-image"
+  >
+    <h1 class="text-format--baloo-header text-format--light ion-no-margin ion-text-center">
+      {{ art.category }}
+    </h1>
+    <div 
+      [style.background]="dynamicStyles.linearGradient"
+      class="effect"
+    >
+    </div>
+  </div>
+
+  <div class="wrapper" [style.background-color]="art.bgColor">
+    <h2 class="text-format--header ion-text-center ion-no-margin ion-padding-bottom">{{ art.title }}</h2>
+    <div class="text-format--basic text-format--light ion-text-justify">
+      {{ art.content }}
+    </div>
+  </div>
+</ion-content>
+

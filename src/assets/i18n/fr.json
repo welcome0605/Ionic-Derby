@@ -1,0 +1,91 @@
+{
+  "SUGGESTIONS_PAGE": {
+    "TITLE": "Envoyer une suggestion",
+    "NOTE": "Votre avis est très important pour nous. Aidez-nous à améliorer vos suggestions, il a aussi un prix! Vous gagnerez des points dans votre profil.",
+    "SUCCESS": "Suggestion reçue",
+    "ERROR": "Votre suggestion n'a pas été reçue"
+  },
+
+  "PROFILE_PAGE": {
+    "TITLE": "Créez votre profil",
+    "JOB": "Tu travailles pour quoi à Derby?",
+    "PHOTO": "Sélectionnez une photo",
+    "SUCCESS": "Profil mis à jour",
+    "ERROR": "Votre profil n'a pas pu être mis à jour"
+  },
+
+  "FORGOT_PAGE": {
+    "TITLE": "Reset mot de passe",
+    "SUCCESS": "Les indications ont été envoyées à votre email",
+    "ERROR": "Impossible d'envoyer les instructions à votre adresse email"
+  },
+
+  "EDIT_PROFILE_PAGE": {
+    "EDIT": "Modifier le p rofil",
+    "AWARD": "Vos prix"
+  },
+
+  "LOGIN_PAGE": {
+    "LOGGING_IN": "Connexion...",
+    "ERROR": "Erreur lors de la tentative de connexion",
+    "FORGOT": "Avez-vous oublié votre mot de passe?"
+  },
+
+  "HOME_PAGE": {
+    "LINK_1": "Nos hôtels",
+    "LINK_2": "Histoire et Art",
+    "LINK_3": "Musée égyptien de Barcelone"
+  },
+
+  "RESOURCES": {
+    "TITLE": "Des ressources",
+    "BUTTON": "Accès au portail des employés"
+  },
+
+  "GLOBAL": {
+    "SLOGAN": "plus proche de toi",
+    "NAME": "Nom",
+    "LASTNAME": "Le nom",
+    "FULLNAME": "Nom et prénom",
+    "PHONE": "Téléphone",
+    "COMMENTS": "Commentaires",
+    "LOGIN": "Commencer la session",
+    "LOGOUT": "Fermer la session",
+    "SIGN_IN": "Enregistrer",
+    "SEND": "Envoyer",
+    "SUGGESTION": "Suggestion",
+    "LOADING": "Envoi de la {{ type }}...",
+    "USER": "Utilisateur",
+    "RESTORE": "Réinitialiser",
+    "RESTORING": "La restauration {{ param }}...",
+    "PASSWORD": "Mot de passe",
+    "CREATES": "Crear",
+    "CREATING": "Creating {{ param }}...",
+    "PROFILE": "Profil",
+    "EMAIL": "Courrier électronique",
+    "LANGUAGE": "Langue",
+    "CANCEL": "Annuler",
+    "OK": "Accepter",
+    "COMMERCIAL": "Commercial",
+    "POINTS": "Des points",
+    "ENTER": "Entrer",
+    "CLOSE": "Fermer",
+    "ART": "Art",
+    "NEWS": "informations",
+    "RANKING": "Vérifier le classement"
+  },
+
+  "LANGUAGES": {
+    "ES": "Espagnol",
+    "EN": "Anglais",
+    "CA": "Catalan",
+    "FR": "Le français"
+  },
+
+  "ERRORS": {
+    "REQUIRED": "Doit remplir le champ {{ value }}",
+    "INVALID_EMAIL": "Email invalide",
+    "INVALID_IMG": "Seules les images au format jpg, jpeg, png sont autorisées",
+    "INVALID_SIZE_IMG": "Votre image devrait peser moins de {{ maxSize }}Mo"
+  }
+}

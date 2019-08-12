@@ -1,0 +1,48 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1 class="text-format--header">
+      {{ 'GLOBAL.NEWS' | translate }}
+    </h1>
+
+    <app-card-new
+      title="Ut sunt non cupidatat do et cillum"
+      description="Ut sunt non cupidatat do et cillum. Do veniam nisi laboris ullamco irure mollit proident quis. Aliqua officia culpa esse ex."
+      city="BCN"
+      cover="/assets/images/home.png"
+      [routerLink]="['/news/', 1]"
+    >
+    </app-card-new>
+
+    <ion-grid class="ion-no-padding list-news">
+      <ion-row>
+        <ion-col>
+          <app-card-new
+            title="Ut sunt non cupidatat do et cillum"
+            city="MAD"
+            cover="/assets/images/home.png"
+            bgColorTag="#ffd31a"
+            type="mini"
+            [routerLink]="['/news/', 2]"
+          >
+          </app-card-new>
+        </ion-col>
+
+        <ion-col>
+          <app-card-new
+            title="Ut sunt non cupidatat"
+            city="París"
+            cover="/assets/images/home.png"
+            bgColorTag="#7e57ff"
+            type="mini"
+            [routerLink]="['/news/', 3]"
+          >
+          </app-card-new>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

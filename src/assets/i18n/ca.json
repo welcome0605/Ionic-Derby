@@ -1,0 +1,91 @@
+{
+  "SUGGESTIONS_PAGE": {
+    "TITLE": "Envia un suggeriment",
+    "NOTE": "La teva opinió és molt important per a nosaltres. Ajuda'ns a millorar amb els teus suggeriments, a més té premi! Guanyaràs punts en perfil.",
+    "SUCCESS": "Suggeriment rebut",
+    "ERROR": "El teu suggeriment no ha sigut rebut"
+  },
+
+  "PROFILE_PAGE": {
+    "TITLE": "Crea el teu",
+    "JOB": "De què treballes en Derby?",
+    "PHOTO": "Selecciona una foto",
+    "SUCCESS": "perfil actualitzat",
+    "ERROR": "El teu perfil no es va poder actualitzar"
+  },
+
+  "FORGOT_PAGE": {
+    "TITLE": "Restablir contrasenya",
+    "SUCCESS": "Les indicacions van ser enviades al teu correu electrònic",
+    "ERROR": "No s'han pogut enviar les indicacions al teu correu electrònic"
+  },
+
+  "EDIT_PROFILE_PAGE": {
+    "EDIT": "Editar perfil",
+    "AWARD": "Teus premis"
+  },
+
+  "LOGIN_PAGE": {
+    "LOGGING_IN": "Iniciant sessió...",
+    "ERROR": "Error en intentar iniciar sessió",
+    "FORGOT": "Has oblidat la teva contrasenya?"
+  },
+
+  "HOME_PAGE": {
+    "LINK_1": "Els nostres Hotels",
+    "LINK_2": "Història i Art",
+    "LINK_3": "Museu Egipci de Barcelona"
+  },
+
+  "RESOURCES": {
+    "TITLE": "Recursos",
+    "BUTTON": "Accés al portal d'empleats"
+  },
+
+  "GLOBAL": {
+    "SLOGAN": "Mes a prop teu",
+    "NAME": "Nom",
+    "LASTNAME": "Cognom",
+    "FULLNAME": "Nom i Cognom",
+    "PHONE": "Telèfon",
+    "COMMENTS": "Comentaris",
+    "LOGIN": "Iniciar sessió",
+    "LOGOUT": "Tancar sesió",
+    "SIGN_IN": "Registrar-se",
+    "SEND": "Enviar",
+    "SUGGESTION": "Suggeriment",
+    "LOADING": "Enviant {{ type }}...",
+    "USER": "Usuari",
+    "RESTORE": "restablir",
+    "RESTORING": "Restablint {{ param }}...",
+    "PASSWORD": "Contrasenya",
+    "CREATES": "Crear",
+    "CREATING": "Creating {{ param }}...",
+    "PROFILE": "Perfil",
+    "EMAIL": "Correu Electrònic",
+    "LANGUAGE": "Llenguatge",
+    "CANCEL": "Cancel·lar",
+    "OK": "Acceptar",
+    "COMMERCIAL": "Comercial",
+    "POINTS": "Punts",
+    "ENTER": "Entrar",
+    "CLOSE": "Tancar",
+    "ART": "Art",
+    "NEWS": "Notícies",
+    "RANKING": "Consulta el Rànquing"
+  },
+
+  "LANGUAGES": {
+    "ES": "Espanyol",
+    "EN": "Anglès",
+    "CA": "Català",
+    "FR": "Francès"
+  },
+
+  "ERRORS": {
+    "REQUIRED": "Ha d'omplir el camp {{ value }}",
+    "INVALID_EMAIL": "correu electrònic vàlid",
+    "INVALID_IMG": "Només es permeten imatges amb format: jpg, jpeg, png",
+    "INVALID_SIZE_IMG": "La teva imatge ha de pesar menys de {{ maxSize }}MB"
+  }
+}

@@ -1,0 +1,65 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+/*
+  Index
+  0. Wrappers.
+  1. Text formats.
+
+*/
+
+// 0. Wrappers.
+.wrapper {
+  padding: 12px;
+}
+
+// 1. text formats.
+.text-format {
+  color: #444444;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  &--basic {
+    @extend .text-format;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &--sub-header {
+    @extend .text-format;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &--header {
+    font-size: 34px;
+    font-weight: 400;
+  }
+  &--info {
+    color: #ad1c22;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &--baloo-header {
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 56px;
+    text-shadow: 2px 2px 4px #333;
+  }
+  &--fatface-header {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  &--light {
+    color: #fff;
+  }
+  &--shadow {
+    text-shadow: 2px 2px 4px #333;
+  }
+}

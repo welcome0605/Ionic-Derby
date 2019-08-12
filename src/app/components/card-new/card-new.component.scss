@@ -1,0 +1,17 @@
+.derby-card-new {
+  &__tag {
+    display: inline-block;
+    background-color: var(--ion-color-primary);
+    padding: 0.4em;
+    min-width: 5em;
+  }
+
+  &__tag--mini {
+    font-size: 14px;
+  }
+
+  &__title--mini {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,56 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1 class="text-format--header">
+      {{ 'RESOURCES.TITLE' | translate }}
+      <!-- Recursos -->
+    </h1>
+
+    <ion-button
+      color="primary"
+      expand="block"
+      mode="ios"
+      class="btn-ranking"
+    >
+      {{ 'RESOURCES.BUTTON' | translate }}
+      <!-- Acceso al portal de empleados -->
+    </ion-button>
+
+    <ion-list lines="full">
+      <ion-item [routerLink]="['/resources-detail']">
+        <ion-label text-wrap>
+          <div class="text-format--sub-header text-format--primary">
+            Descuentos en la farmacia 1896
+          </div>
+        </ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['/resources-detail']">
+        <ion-label text-wrap>
+          <div class="text-format--sub-header text-format--primary">
+            Adeslas completa para los empleados de Derby a un precio especial
+          </div>
+        </ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['/resources-detail']">
+        <ion-label text-wrap>
+          <div class="text-format--sub-header text-format--primary">
+            Consulta el calendario laboral de 2019
+          </div>
+        </ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['/resources-detail']">
+        <ion-label text-wrap>
+          <div class="text-format--sub-header text-format--primary">
+            Consulte el manual de acceso al portal del empleado
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

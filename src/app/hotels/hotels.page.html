@@ -1,0 +1,20 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1 class="text-format--header">
+      {{ 'HOME_PAGE.LINK_1' | translate }}
+    </h1>
+    
+    <app-card 
+      *ngFor="let hotel of hotels" 
+      [title]="hotel.name"
+      [description]="hotel.description"
+      [city]="hotel.city"
+      [cover]="hotel.cover"
+    >
+    </app-card>
+  </div>
+</ion-content>

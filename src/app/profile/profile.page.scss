@@ -1,0 +1,51 @@
+$item-count: 8;
+$circle-size: 16em;
+$item-size: 4em;
+
+.circle-container {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  margin: 4em auto 3em auto;
+  border: solid 5px #ddd;
+
+  > .circle-container__item {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+
+    $angle: (360 / $item-count);
+    $rotate: -90;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rotate * 1deg)
+          translate($circle-size / 2)
+          rotate($rotate * -1deg);
+      }
+
+      $rotate: $rotate + $angle;
+    }
+  }
+
+  &.bg-responsive {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__image {
+    border-radius: 50%;
+
+    &--disabled {
+      opacity: 0.4;
+    }
+  }
+}

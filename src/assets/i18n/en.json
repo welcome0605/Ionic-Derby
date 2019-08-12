@@ -1,0 +1,92 @@
+{
+  "SUGGESTIONS_PAGE": {
+    "TITLE": "Send a suggestion",
+    "NOTE": "Your opinion is very important for us. Help us improve with your suggestions, it also has a prize! You will earn points in profile.",
+    "SUCCESS": "Suggestion received",
+    "ERROR": "Your suggestion was not received"
+  },
+
+  "PROFILE_PAGE": {
+    "TITLE": "Create your profile",
+    "JOB": "¿What do you work for in Derby?",
+    "PHOTO": "Select a photo",
+    "SUCCESS": "Updated profile",
+    "ERROR": "Your profile could not be updated"
+  },
+
+  "FORGOT_PAGE": {
+    "TITLE": "Reset password",
+    "SUCCESS": "The indications were sent to your email",
+    "ERROR": "Failed to send directions to your email"
+  },
+
+  "EDIT_PROFILE_PAGE": {
+    "EDIT": "Edit profile",
+    "AWARD": "Your Awards"
+  },
+
+  "LOGIN_PAGE": {
+    "LOGGING_IN": "Logging in...",
+    "ERROR": "Error when trying to login",
+    "FORGOT": "Have you forgotten your password?"
+  },
+
+  "HOME_PAGE": {
+    "LINK_1": "Our Hotels",
+    "LINK_2": "History and Art",
+    "LINK_3": "Egyptian Museum of Barcelona"
+  },
+
+  "RESOURCES": {
+    "TITLE": "Resources",
+    "BUTTON": "Access to the employee portal"
+  },
+
+  "GLOBAL": {
+    "SLOGAN": "Closer to you",
+    "NAME": "Name",
+    "LASTNAME": "Lastname",
+    "FULLNAME": "Name and Lastname",
+    "PHONE": "Phone",
+    "COMMENTS": "Comments",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "SIGN_IN": "Register",
+    "SEND": "Send",
+    "SUGGESTION": "Suggestion",
+    "LOADING": "Sending {{ type }}...",
+    "USER": "User",
+    "RESTORE": "Restore",
+    "RESTORING": "Restoring {{ param }}...",
+    "PASSWORD": "Password",
+    "CREATES": "Create",
+    "CREATING": "Creating {{ param }}...",
+    "PROFILE": "Profile",
+    "AND": "and",
+    "EMAIL": "E-mail",
+    "LANGUAGE": "Language",
+    "CANCEL": "Cancel",
+    "OK": "Ok",
+    "COMMERCIAL": "Commercial",
+    "POINTS": "Points",
+    "ENTER": "Enter",
+    "CLOSE": "Close",
+    "ART": "Art",
+    "NEWS": "News",
+    "RANKING": "Check the Ranking"
+  },
+
+  "LANGUAGES": {
+    "ES": "Spanish",
+    "EN": "English",
+    "CA": "Catalan",
+    "FR": "French"
+  },
+
+  "ERRORS": {
+    "REQUIRED": "Must fill in the field {{ value }}",
+    "INVALID_EMAIL": "Invalid E-mail",
+    "INVALID_IMG": "Only images with format: jpg, jpeg, png are allowed",
+    "INVALID_SIZE_IMG": "Your image should weigh less than {{ maxSize }}MB"
+  }
+}

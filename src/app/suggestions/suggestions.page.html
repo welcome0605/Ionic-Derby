@@ -1,0 +1,104 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapper">
+    <h1 class="text-format--header">
+      {{ 'SUGGESTIONS_PAGE.TITLE' | translate }}
+    </h1>
+
+    <p class="text-format--basic">{{ 'SUGGESTIONS_PAGE.NOTE' | translate }}</p>
+
+    <form [formGroup]="suggestionForm" (ngSubmit)="createSuggestion()">
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">{{
+            'GLOBAL.EMAIL' | translate
+          }}</ion-label>
+          <ion-input
+            formControlName="email"
+            type="email"
+            required="true"
+            clearInput
+          >
+          </ion-input>
+        </ion-item>
+
+        <ng-container *ngIf="email.touched && email.invalid">
+          <ion-text
+            *ngIf="email.errors.required"
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.REQUIRED' | translate: { value: emailWord } }}
+          </ion-text>
+
+          <ion-text 
+            *ngIf="email.errors.email" 
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.INVALID_EMAIL' | translate }}
+          </ion-text>
+        </ng-container>
+
+        <ion-item>
+          <ion-label position="floating">{{
+            'GLOBAL.PHONE' | translate
+          }}</ion-label>
+          <ion-input
+            formControlName="phone"
+            type="text"
+            required="true"
+            clearInput
+          >
+          </ion-input>
+        </ion-item>
+
+        <ng-container *ngIf="phone.touched && phone.invalid">
+          <ion-text
+            *ngIf="phone.errors.required"
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.REQUIRED' | translate: { value: phoneWord } }}
+          </ion-text>
+        </ng-container>
+
+        <ion-item>
+          <ion-label position="floating">{{
+            'GLOBAL.COMMENTS' | translate
+          }}</ion-label>
+          <ion-textarea
+            formControlName="comments"
+            type="text"
+            rows="8"
+            required="true"
+          >
+          </ion-textarea>
+        </ion-item>
+
+        <ng-container *ngIf="comments.touched && comments.invalid">
+          <ion-text
+            *ngIf="comments.errors.required"
+            color="danger"
+            class="text-format--info"
+          >
+            {{ 'ERRORS.REQUIRED' | translate: { value: commentsWord } }}
+          </ion-text>
+        </ng-container>
+      </ion-list>
+
+      <ion-button
+        color="primary"
+        expand="block"
+        mode="ios"
+        type="submit"
+        [disabled]="suggestionForm.invalid || isLoading"
+      >
+        {{ sendWord }}
+      </ion-button>
+    </form>
+  </div>
+</ion-content>

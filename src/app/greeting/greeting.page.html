@@ -1,0 +1,99 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  <ion-slides pager="true" [options]="slideOptions" class="derby-slider">
+    <ion-slide>
+      <img src="/assets/images/home.png" />
+      <h2
+        class="
+          derby-slider__title text-format--baloo-header ion-justify-content-center
+          ion-align-items-center ion-no-margin
+        "
+      >
+        Buenos días <br />
+        Ana
+      </h2>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="/assets/images/home.png" />
+      <h2
+        class="
+          derby-slider__title text-format--baloo-header ion-justify-content-center
+          ion-align-items-center ion-no-margin
+        "
+      >
+        Nuevas Promociones
+      </h2>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="/assets/images/home.png" />
+      <h2
+        class="
+          derby-slider__title text-format--baloo-header ion-justify-content-center
+          ion-align-items-center ion-no-margin
+        "
+      >
+        Datos de interés
+      </h2>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="wrapper">
+    <ion-list lines="full">
+      <ion-item [routerLink]="['/question']">
+        <ion-avatar slot="start">
+          <ion-icon name="help" class="icon-list"></ion-icon>
+        </ion-avatar>
+        <ion-label text-wrap>
+          <div class="text-format--sub-header text-format--light">
+            La pregunta del mes
+          </div>
+          <p class="ion-margin-bottom">
+            Contesta a la pregunta del mes y ¡gana puntos!
+          </p>
+          <ion-button
+            color="light"
+            expand="block"
+            mode="ios"
+            fill="outline"
+            class="button-list"
+          >
+            {{ 'GLOBAL.RANKING' | translate }}
+          </ion-button>
+        </ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['/resources']">
+        <ion-avatar slot="start">
+          <ion-icon name="filing" class="icon-list"></ion-icon>
+        </ion-avatar>
+        <ion-label text-wrap>
+          <div class="text-format--sub-header text-format--light">Recursos</div>
+          <p>Entra y consulta beneficios sociales, calendario laboral...</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col
+          class="list-images ion-justify-content-center ion-align-items-center"
+          [routerLink]="['/art']"
+        >
+          <img src="/assets/images/home.png" />
+          <h2 class="list-images__item">{{ 'GLOBAL.ART' | translate }}</h2>
+        </ion-col>
+        <ion-col
+          class="list-images ion-justify-content-center ion-align-items-center"
+        >
+          <ion-img src="/assets/images/home.png"> </ion-img>
+          <h2 class="list-images__item">{{ 'GLOBAL.NEWS' | translate }}</h2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

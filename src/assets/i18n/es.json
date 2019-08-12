@@ -1,0 +1,92 @@
+{
+  "SUGGESTIONS_PAGE": {
+    "TITLE": "Envía una sugerencia",
+    "NOTE": "Tu opinión es muy importante para nosotros. Ayudanos a mejorar con tus sugerencias, además ¡tiene premio! Ganarás puntos en perfil.",
+    "SUCCESS": "Sugerencia recibida",
+    "ERROR": "Tu sugerencia no fue recibida"
+  },
+
+  "PROFILE_PAGE": {
+    "TITLE": "Crea tu perfil",
+    "JOB": "¿De qué trabajas en Derby?",
+    "PHOTO": "Selecciona una foto",
+    "SUCCESS": "Perfil actualizado",
+    "ERROR": "Tu perfil no se pudo actualizar"
+  },
+
+  "FORGOT_PAGE": {
+    "TITLE": "Restablecer contraseña",
+    "SUCCESS": "Las indicaciones fueron enviadas a tu correo electrónico",
+    "ERROR": "No se pudo enviar las indicaciones a tu correo electrónico"
+  },
+
+  "EDIT_PROFILE_PAGE": {
+    "EDIT": "Editar perfil",
+    "AWARD": "Tus Premios"
+  },
+
+  "LOGIN_PAGE": {
+    "LOGGING_IN": "Iniciando sesión...",
+    "ERROR": "Error al intentar iniciar sesión",
+    "FORGOT": "¿Has olvidado tu contraseña?"
+  },
+
+  "HOME_PAGE": {
+    "LINK_1": "Nuestros Hoteles",
+    "LINK_2": "Historia y Arte",
+    "LINK_3": "Museo Egipcio de Barcelona"
+  },
+
+  "RESOURCES": {
+    "TITLE": "Resources",
+    "BUTTON": "Acceso al portal de empleados"
+  },
+
+  "GLOBAL": {
+    "SLOGAN": "Más cerca de tí",
+    "NAME": "Nombre",
+    "LASTNAME": "Apellido",
+    "FULLNAME": "Nombre y Apellido",
+    "PHONE": "Teléfono",
+    "COMMENTS": "Comentarios",
+    "LOGIN": "Inicio de sesión",
+    "LOGOUT": "Cerrar sesión",
+    "SIGN_IN": "Registrarse",
+    "SEND": "Enviar",
+    "SUGGESTION": "Sugerencia",
+    "LOADING": "Enviando {{ type }}...",
+    "USER": "Usuario",
+    "RESTORE": "Restablecer",
+    "RESTORING": "Restableciendo {{ param }}...",
+    "PASSWORD": "Contraseña",
+    "CREATES": "Crear",
+    "CREATING": "Creando {{ param }}...",
+    "PROFILE": "Perfil",
+    "EMAIL": "Correo Electrónico",
+    "LANGUAGE": "Idioma",
+    "CANCEL": "Cancelar",
+    "OK": "Aceptar",
+    "COMMERCIAL": "Comercial",
+    "POINTS": "Puntos",
+    "ENTER": "Entrar",
+    "CLOSE": "Cerrar",
+    "ART": "Arte",
+    "NEWS": "Noticias",
+    "RANKING": "Consulta el Ranking"
+  },
+
+  "LANGUAGES": {
+    "ES": "Español",
+    "EN": "Inglés",
+    "CA": "Catalán",
+    "FR": "Francés"
+  },
+
+  "ERRORS": {
+    "REQUIRED": "Debe rellenar el campo {{ value }}",
+    "INVALID_EMAIL": "Correo electrónico no válido",
+    "INVALID_PASSWORD": "Contraseña incorrecta",
+    "INVALID_IMG": "Solo se permiten imagenes con formato: jpg, jpeg, png",
+    "INVALID_SIZE_IMG": "Tu imagen debe pesar menos de {{ maxSize }}MB"
+  }
+}

@@ -1,0 +1,21 @@
+<ion-content color="secondary">
+  <ion-img
+    src="/assets/images/welcome-logo.png"
+    class="welcome-logo"
+    [style.height.px]="innerHeight / 1.8"
+  >
+  </ion-img>
+  <p class="slogan">{{ 'GLOBAL.SLOGAN' | translate }}</p>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="secondary">
+    <ion-button
+      [routerLink]="['/login']"
+      expand="block"
+      mode="ios"
+      class="login-button"
+    >
+      {{ 'GLOBAL.LOGIN' | translate }}
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

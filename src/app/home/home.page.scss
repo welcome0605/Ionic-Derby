@@ -1,0 +1,19 @@
+.wrapper {
+  --ion-background-color: #000;
+  --ion-background-color: rgb(0, 0, 0);
+  --ion-text-color: #fff;
+  --ion-text-color-rgb: rgb(255, 255, 255);
+  --ion-item-border-color: #fff;
+
+  .logo {
+    max-width: 300px;
+    margin: 16px auto;
+  }
+
+  .home-list {
+    &__link {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
